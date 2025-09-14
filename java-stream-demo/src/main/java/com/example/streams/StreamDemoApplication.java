@@ -1,7 +1,7 @@
 package com.example.streams;
 
 import com.example.streams.demo.BasicStreamOperations;
-
+import com.example.streams.demo.OptionalDemo;
 import com.example.streams.model.Person;
 import java.time.LocalDate;
 import java.util.List;
@@ -13,6 +13,10 @@ public class StreamDemoApplication {
         System.out.println("=== Basic Stream Operations ===");
         BasicStreamOperations operations = new BasicStreamOperations(people);
         operations.getFullName().forEach(System.out::println);
+        
+        System.out.println("\n=== Optional Demo ===");
+        OptionalDemo optionalDemo = new OptionalDemo(people);
+        optionalDemo.demonstrateOptionalUsage();
         
     }
 
